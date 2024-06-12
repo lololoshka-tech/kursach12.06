@@ -1,0 +1,41 @@
+main {
+    height: fit-content;
+    margin: 150px 0 80px;
+}
+
+.product {
+    width: max-content;
+    margin: auto;
+}
+
+.product .heading {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.product-content {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+    align-items: start; 
+    gap: 16px; 
+}
+
+.product-box {
+    max-width: 90%;
+    padding: 0px 20px 10px 20px;
+    background: transparent;
+    box-shadow: 5px 30px 56px -10px rgba(55, 55, 55, 0.12); 
+    border-radius: 10px;
+    position: relative;
+    transition: all .355s ease;
+}
+
+.product-box img {
+    max-width: 100%;
+}
+
+.product-box h2 {
+    text-align: left;
+    line-height: 1.2;
+}

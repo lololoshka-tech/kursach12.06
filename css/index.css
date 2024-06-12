@@ -1,0 +1,172 @@
+.btn-box .btn:nth-child(2) {
+  background: transparent;
+  color: var(--secondary);
+  transition: .7s;
+  transition-property: background, color;
+
+}
+.btn-box .btn:nth-child(2):hover {
+  background: var(--secondary);
+  color: var(--text);
+}
+
+.home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 12vh 8%;
+  justify-content: space-between;
+}
+.home img {
+  width: 40vw;
+}
+.home-content {
+  max-width: 600px;
+}
+.home-content h1 {
+  font-size: 45px;
+  line-height: 1.2;
+}
+.home-content p {
+  font-size: 20px;
+  margin: 10px 0 30px;
+}
+.home-content .btn-box {
+  display: flex;
+  gap: 20px;
+  width: max-content;
+}
+
+.about {
+  display: flex;
+  color: var(--text);
+  align-items: center;
+  padding: 0 8%;
+  gap: 64px;
+  min-height: 100vh;
+}
+.about-img img {  
+  width: 40vw;
+}
+.about-content h2 {
+  text-align: left;
+  line-height: 1.2;
+}
+.about-content h3 {
+  font-size: 32px;
+}
+.about-content p {
+  font-size: 20px;
+  margin: 25px 0 30px;
+}
+.about-content .btn {
+  background: transparent;
+  color: var(--secondary);
+  transition: .7s;
+}
+.about-content .btn:hover {
+  background: var(--secondary);
+  color: var(--text);
+}
+
+.heading {
+  font-size: 45px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.catalog {
+  height: max-content;
+  width: 100vw;
+}
+.catalog-box {
+  display: flex;
+  height: min-content;
+  justify-content: space-around;
+}
+/* .catalog-box h1 {
+  font-weight: 700;
+  text-decoration: none;
+} */
+.column {
+  width: min-content;
+  height: min-content;
+  font-size: 25px;
+}
+.column .img-container {
+  width: 200px;
+  height: 300px;
+  border-radius: 30px;
+  background: url(../images/guitar.webp) center center no-repeat;
+  background-size: 105%;
+  transition-property: box-shadow, background-size;
+  transition-duration: .2s;
+  transition-timing-function: linear;
+  margin-bottom: 5px;
+}
+.img-container:hover {
+  box-shadow: inset 0 0 60px 10px black;
+  background-size: 100%;
+}
+
+.testimonial-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  min-height: 100vh;
+  margin: 80px 0;
+}
+.testimonial-container .testimonial-wrapper {
+  position: relative;
+  max-width: 90rem;
+  width: 100%;
+  padding: 60px 80px;
+}
+.testimonial-wrapper .testimonial-box {
+  padding: 16px;
+  border-radius: 32px;
+  overflow: hidden;
+}
+.testimonial-content .testimonial-slide {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--background);
+  border-radius: 32px;
+  box-shadow: 0 1.6px 8px var(--text);
+  padding: 48px 80px;
+  border-top: 12.6px solid var(--primary);
+  border-bottom: 12.6px solid var(--primary);
+}
+.testimonial-slide img {
+  width: 230px;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid var(--background);
+  outline: 2px solid var(--primary);
+}
+.testimonial-slide h3 {
+  font-size: 40px;
+  margin: 32px 0;
+}
+.testimonial-slide p {
+  font-size: 23px;
+  text-align: center;
+}
+.testimonial-box .swiper-button-next,
+.testimonial-box .swiper-button-prev {
+  color: var(--primary);
+}
+.testimonial-box .swiper-button-next {
+  right: 0;
+}
+.testimonial-box .swiper-button-prev {
+  left: 0;
+}
+.testimonial-box .swiper-pagination-bullet {
+  background: var(--secondary);
+}
+.testimonial-box .swiper-pagination-bullet-active {
+  background: var(--primary);
+}
