@@ -27,11 +27,12 @@ main {
     width: max-content;
 }
 
-.buy-box .colors {
+.buy-box h2 {
     margin: 10px 0;
     display: flex;
     gap: 5px;
 }
+
 
 .buy-box .colors li {
     width: 20px;
